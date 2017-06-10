@@ -1,3 +1,5 @@
+require "../../reviewer/signature_reviewer"
+
 class PageAnalizis
   # process every step of gradually signature building
   abstract class SignatureStrategy

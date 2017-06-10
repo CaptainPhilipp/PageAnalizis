@@ -1,8 +1,6 @@
 require "../../spec_helper"
 
-class PageAnalizis
-  describe Option do
-    pending ".new should build option with right data" do
-    end
+describe PageAnalizis::Option do
+  pending ".new should build option with right data" do
   end
 end

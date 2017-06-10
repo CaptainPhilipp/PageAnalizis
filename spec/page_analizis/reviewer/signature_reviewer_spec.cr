@@ -1,10 +1,8 @@
-# require "../../spec_helper"
-#
-# class PageAnalizis
-#   describe SignatureReviewer do
-#     context "#review" do
-#       pending "" do
-#       end
-#     end
-#   end
-# end
+require "../../spec_helper"
+
+describe PageAnalizis::SignatureReviewer do
+  context "#review" do
+    pending "" do
+    end
+  end
+end

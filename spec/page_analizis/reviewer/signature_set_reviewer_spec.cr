@@ -1,15 +1,13 @@
 require "../../spec_helper"
 
-class PageAnalizis
-  describe SignatureSetReviewer do
-    context "#free_place_exists?" do
-      pending "" do
-      end
+describe PageAnalizis::SignatureSetReviewer do
+  context "#free_place_exists?" do
+    pending "" do
     end
+  end
 
-    context "#resembling_exists?" do
-      pending "" do
-      end
+  context "#resembling_exists?" do
+    pending "" do
     end
   end
 end

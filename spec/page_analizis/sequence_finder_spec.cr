@@ -1,10 +1,8 @@
 require "../spec_helper"
 
-class PageAnalizis
-  describe SequenceFinder do
-    context "#search" do
-      pending "" do
-      end
+describe PageAnalizis::SequenceFinder do
+  context "#search" do
+    pending "" do
     end
   end
 end
