@@ -4,9 +4,21 @@ TODO: Write a description here
 
 ## Installation
 
-TODO: Write installation instructions here
+Add this to your application's `shard.yml`:
+
+```yaml
+dependencies:
+  PageAnalizis:
+    github: CaptainPhilipp/PageAnalizis
+```
 
 ## Usage
+
+```crystal
+require "PageAnalizis"
+
+PageAnalizis.parse(html, options_hash)
+```
 
 TODO: Write usage instructions here
 
@@ -16,7 +28,7 @@ TODO: Write development instructions here
 
 ## Contributing
 
-1. Fork it ( https://github.com/[your-github-name]/PageAnalizis/fork )
+1. Fork it ( https://github.com/CaptainPhilipp/PageAnalizis/fork )
 2. Create your feature branch (git checkout -b my-new-feature)
 3. Commit your changes (git commit -am 'Add some feature')
 4. Push to the branch (git push origin my-new-feature)
@@ -24,4 +36,4 @@ TODO: Write development instructions here
 
 ## Contributors
 
-- [[your-github-name]](https://github.com/[your-github-name]) CaptainPhilipp - creator, maintainer
+- [CaptainPhilipp](https://github.com/CaptainPhilipp) - creator, maintainer
