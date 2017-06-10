@@ -8,11 +8,11 @@ module PageAnalizis
       @failed = false
     end
 
-    def scan(_node, **, save_into signature)
+    def scan(_node, *, save_into signature)
       raise NotImplementedError
     end
 
-    protected def save_results(node, **, into signature) : Void
+    protected def save_results(node, *, into signature) : Void
       signature.depth   += 1
       signature.names   << node.name
       signature.ids     += node.attribute_values("id")

@@ -3,11 +3,11 @@ module PageAnalizis
   class SignatureSetReviewer
     def initialize(@options : OptionsContainer) end
 
-    def free_place_exists?(**, in set)
+    def free_place_exists?(*, in set)
       # TODO
     end
 
-    def resembling_exists?(**, in set, like signature)
+    def resembling_exists?(*, in set, like signature)
       # TODO
     end
   end

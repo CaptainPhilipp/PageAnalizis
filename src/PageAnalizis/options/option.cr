@@ -14,13 +14,13 @@ module PageAnalizis
       @option_name     = exarticulate_the_rest
     end
 
-    private def exarticulate(**, trigger : String) : Bool
+    private def exarticulate(*, trigger : String) : Bool
       return false unless splited_key.includes?(trigger)
       splited_key.delete(trigger)
       true
     end
 
-    private def exarticulate(**, triggers : Strings) : String
+    private def exarticulate(*, triggers : Strings) : String
       trigger = (splited_key & triggers).first
 
       exarticulate(trigger: trigger)

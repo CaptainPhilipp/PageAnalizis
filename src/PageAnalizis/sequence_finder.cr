@@ -6,7 +6,7 @@ module PageAnalizis
       @signature_builder = SignatureBuilder.new(options)
     end
 
-    def search(**, in node : Parser)
+    def search(*, in node : Parser)
       if scan(node)
         # TODO
       else

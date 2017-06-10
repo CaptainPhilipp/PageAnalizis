@@ -3,7 +3,7 @@ module PageAnalizis
   class SignatureBuilder
     def initialize(@options : OptionsContainer) end
 
-    def build(**, for node) : Signature?
+    def build(*, for node) : Signature?
       signature = Signature.new
 
       strategies.each do |strategy_klass|
