@@ -1,3 +1,5 @@
+require "./strategy"
+
 module PageAnalizis
   # saves descendants of childrens attributes
   class DescendantStrategy < SignatureStrategy

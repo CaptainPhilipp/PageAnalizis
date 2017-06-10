@@ -1,3 +1,5 @@
+require "./strategy"
+
 module PageAnalizis
   # saves data of all descendants
   class DataStrategy < SignatureStrategy

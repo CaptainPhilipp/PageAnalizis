@@ -1,3 +1,6 @@
+require "./strategies/*"
+require "./signature"
+
 module PageAnalizis
   # gradually builds signature, using changing strategies
   class SignatureBuilder

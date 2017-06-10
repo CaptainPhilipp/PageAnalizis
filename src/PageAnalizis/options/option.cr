@@ -1,11 +1,11 @@
 module PageAnalizis
   # parse and store option params
   class Option
-    getter  :key             : String,
-            :option_name     : String,
-            :size_trigger    : Bool,
-            :diff_trigger    : Bool,
-            :compare_trigger : Symbol
+    getter  key             : String,
+            option_name     : String,
+            size_trigger    : Bool,
+            diff_trigger    : Bool,
+            compare_trigger : Symbol
 
     def initialize(@key, value : Int32)
       @size_trigger    = exarticulate trigger: "size"

@@ -1,3 +1,5 @@
+require "./strategy"
+
 module PageAnalizis
   # saves only current node attributes
   class ElementStrategy < SignatureStrategy

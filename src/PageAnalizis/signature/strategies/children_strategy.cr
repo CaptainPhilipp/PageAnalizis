@@ -1,3 +1,5 @@
+require "./strategy"
+
 module PageAnalizis
   # saves only current node childrens attributes
   class ChildrenStrategy < SignatureStrategy
