@@ -1,13 +1,17 @@
 module PageAnalizis
   # parse and store option params
   class Option
-    getter :key, :size_trigger, :diff_trigger, :compare_trigger, :option_name
+    getter  :key             : String,
+            :option_name     : String,
+            :size_trigger    : Bool,
+            :diff_trigger    : Bool,
+            :compare_trigger : Symbol
 
-    def initialize(@key : String, value : Int32)
+    def initialize(@key, value : Int32)
       @size_trigger    = exarticulate trigger: "size"
       @diff_trigger    = exarticulate trigger: "diff"
       @compare_trigger = min_max_symbols[exarticulate triggers: %w(min max)]
-      @option_name     = join_the_rest
+      @option_name     = exarticulate_the_rest
     end
 
     private def exarticulate(**, trigger : String) : Bool
@@ -31,7 +35,7 @@ module PageAnalizis
       { "min" => :min, "max" => :max }
     end
 
-    private def join_the_rest
+    private def exarticulate_the_rest
       joined = splited_key.join('_')
       splited_key.clear
       joined

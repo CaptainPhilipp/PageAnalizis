@@ -3,7 +3,7 @@ module PageAnalizis
   class SignatureBuilder
     def initialize(@options : OptionsContainer) end
 
-    def build(node) : Signature?
+    def build(**, for node) : Signature?
       signature = Signature.new
 
       strategies.each do |strategy_klass|
@@ -16,12 +16,12 @@ module PageAnalizis
       signature
     end
 
-    private def irrelevant!(signature : Signature)
-      signature.irrelevant = true
-    end
-
     private def strategies
       [ElementStrategy, ChildrenStrategy, DescendantStrategy, DataStrategy]
+    end
+
+    private def irrelevant!(signature : Signature)
+      signature.irrelevant = true
     end
   end
 end

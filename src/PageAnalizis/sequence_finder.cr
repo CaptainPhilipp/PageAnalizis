@@ -14,9 +14,9 @@ module PageAnalizis
       end
     end
 
-    private def scan
+    private def scan(node)
       node.each_children do |child_node|
-        signature = signature_builder.build(child_node)
+        signature = signature_builder.build for: child_node
         return false if signature.irrelevant?
 
         signature_set << signature

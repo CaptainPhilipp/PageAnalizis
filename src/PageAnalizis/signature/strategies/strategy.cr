@@ -21,10 +21,10 @@ module PageAnalizis
       failed! if reviewer.review signature
     end
 
+    private getter :reviewer
+
     private def failed!
       @failed = true
     end
-
-    private getter :reviewer
   end
 end
