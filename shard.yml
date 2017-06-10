@@ -1,0 +1,13 @@
+name: PageAnalizis
+version: 0.1.0
+
+authors:
+  - CaptainPhilipp <Ph-s@mail.ru>
+
+targets:
+  PageAnalizis:
+    main: src/PageAnalizis.cr
+
+crystal: 0.20.5
+
+license: MIT
