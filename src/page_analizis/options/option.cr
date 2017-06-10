@@ -1,4 +1,4 @@
-module PageAnalizis
+class PageAnalizis
   # parse and store option params
   class Option
     getter  key             : String,

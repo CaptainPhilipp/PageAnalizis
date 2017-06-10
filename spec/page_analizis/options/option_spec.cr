@@ -1,6 +1,6 @@
 require "../../spec_helper"
 
-module PageAnalizis
+class PageAnalizis
   describe Option do
     pending ".new should build option with right data" do
     end

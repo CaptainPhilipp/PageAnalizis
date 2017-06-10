@@ -1,6 +1,6 @@
 require "../../spec_helper"
 
-module PageAnalizis
+class PageAnalizis
   describe Signature do
     context "property #depth" do
       pending "" do

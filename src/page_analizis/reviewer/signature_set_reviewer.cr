@@ -1,4 +1,4 @@
-module PageAnalizis
+class PageAnalizis
   # checks signature set relevancy
   class SignatureSetReviewer
     def initialize(@options : OptionsContainer) end

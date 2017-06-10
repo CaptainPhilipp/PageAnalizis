@@ -1,7 +1,7 @@
 require "./strategies/*"
 require "./signature"
 
-module PageAnalizis
+class PageAnalizis
   # gradually builds signature, using changing strategies
   class SignatureBuilder
     def initialize(@options : OptionsContainer) end

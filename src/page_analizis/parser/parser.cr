@@ -1,4 +1,4 @@
-module PageAnalizis
+class PageAnalizis
   # facade for document parsing
   class Parser
     def self.parse(html : String)

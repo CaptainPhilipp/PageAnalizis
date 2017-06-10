@@ -1,6 +1,6 @@
 require "../../../spec_helper"
 
-module PageAnalizis
+class PageAnalizis
   describe ChildrenStrategy do
     context "#scan" do
       pending "" do

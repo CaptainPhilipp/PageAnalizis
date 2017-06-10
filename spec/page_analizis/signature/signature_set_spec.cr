@@ -1,6 +1,6 @@
 require "../../spec_helper"
 
-module PageAnalizis
+class PageAnalizis
   describe SignatureSet do
     context "#new" do
       pending "" do

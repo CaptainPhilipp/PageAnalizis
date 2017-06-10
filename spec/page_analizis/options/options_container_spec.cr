@@ -1,6 +1,6 @@
 require "../../spec_helper"
 
-module PageAnalizis
+class PageAnalizis
   describe OptionsContainer do
     context ".parse" do
       pending "should build right structure" do

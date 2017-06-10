@@ -1,6 +1,6 @@
 require "../../spec_helper"
 
-module PageAnalizis
+class PageAnalizis
   describe SignatureBuilder do
     context "#build" do
       pending "" do

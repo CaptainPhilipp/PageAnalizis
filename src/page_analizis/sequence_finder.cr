@@ -1,7 +1,7 @@
 require "./signature/signature_set"
 require "./signature/signature_builder"
 
-module PageAnalizis
+class PageAnalizis
   # traverse tree of node, searching relevant group of sibblings
   class SequenceFinder
     def initialize(options)

@@ -1,4 +1,4 @@
-module PageAnalizis
+class PageAnalizis
   # stores signature data
   struct Signature
     property :depth, :names, :ids, :classes

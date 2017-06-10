@@ -1,6 +1,6 @@
 require "./strategy"
 
-module PageAnalizis
+class PageAnalizis
   # saves descendants of childrens attributes
   class DescendantStrategy < SignatureStrategy
     def scan(node, *, save_into signature)

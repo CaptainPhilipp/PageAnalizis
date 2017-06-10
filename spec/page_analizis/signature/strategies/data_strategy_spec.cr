@@ -1,6 +1,6 @@
 require "../../../spec_helper"
 
-module PageAnalizis
+class PageAnalizis
   describe ElementStrategy do
     context "#scan" do
       # TODO

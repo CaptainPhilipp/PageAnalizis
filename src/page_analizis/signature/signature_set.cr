@@ -1,7 +1,7 @@
 require "../reviewer/signature_set_reviewer"
 require "./signature"
 
-module PageAnalizis
+class PageAnalizis
   # builds and store set of signatures
   class SignatureSet
     getter :set, :collection

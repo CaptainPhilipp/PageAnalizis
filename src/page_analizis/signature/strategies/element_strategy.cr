@@ -1,6 +1,6 @@
 require "./strategy"
 
-module PageAnalizis
+class PageAnalizis
   # saves only current node attributes
   class ElementStrategy < SignatureStrategy
     def scan(node, *, save_into signature)

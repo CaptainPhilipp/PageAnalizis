@@ -1,6 +1,6 @@
 require "../../spec_helper"
 
-module PageAnalizis
+class PageAnalizis
   describe SignatureSetReviewer do
     context "#free_place_exists?" do
       pending "" do

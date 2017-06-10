@@ -1,6 +1,6 @@
 # require "../../spec_helper"
 #
-# module PageAnalizis
+# class PageAnalizis
 #   describe SignatureReviewer do
 #     context "#review" do
 #       pending "" do
