@@ -1,9 +1,8 @@
 require "./spec_helper"
 
 describe PageAnalizis do
-  # TODO: Write tests
-
-  it "works" do
-    false.should eq(true)
+  context ".parse" do
+    pending "should respond with right data" do
+    end
   end
 end
