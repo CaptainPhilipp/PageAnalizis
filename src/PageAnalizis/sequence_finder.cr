@@ -5,9 +5,15 @@ module PageAnalizis
       @signature_builder = SignatureBuilder.new(options)
     end
 
-    private getter :signature_set, :signature_builder
+    def search(**, in node : Parser)
+      if scan(node)
+        # TODO
+      else
+        node.each_children { |child| traverse_tree(child) }
+      end
+    end
 
-    def scan(node) : Bool
+    private def scan
       node.each_children do |child_node|
         signature = signature_builder.build(child_node)
         return false if signature.irrelevant?
