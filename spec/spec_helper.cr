@@ -1,2 +1,2 @@
 require "spec"
-require "../src/PageAnalizis"
+require "../src/page_analizis"

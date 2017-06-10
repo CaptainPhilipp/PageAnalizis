@@ -1,6 +1,6 @@
-require "./PageAnalizis/options/options_container"
-require "./PageAnalizis/parser/parser"
-require "./PageAnalizis/sequence_finder"
+require "./page_analizis/options/options_container"
+require "./page_analizis/parser/parser"
+require "./page_analizis/sequence_finder"
 
 module PageAnalizis
   def self.parse(html, imported_options)
