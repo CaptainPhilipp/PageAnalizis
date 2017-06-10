@@ -1,4 +1,5 @@
 module PageAnalizis
+  # traverse tree of node, searching relevant group of sibblings
   class SequenceFinder
     def initialize(options)
       @signature_set     = SignatureSet.new(options)

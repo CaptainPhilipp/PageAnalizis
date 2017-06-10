@@ -1,4 +1,5 @@
 module PageAnalizis
+  # parse and store option params
   class Option
     getter :key, :size_trigger, :diff_trigger, :compare_trigger, :option_name
 

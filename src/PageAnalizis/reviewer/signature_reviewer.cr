@@ -1,4 +1,5 @@
 module PageAnalizis
+  # checks signature relevancy
   class SignatureReviewer
     def initialize(@options : OptionsContainer) end
 

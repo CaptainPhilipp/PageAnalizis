@@ -1,4 +1,5 @@
 module PageAnalizis
+  # process every step of gradually signature building
   abstract class SignatureStrategy
     getter? :failed
 

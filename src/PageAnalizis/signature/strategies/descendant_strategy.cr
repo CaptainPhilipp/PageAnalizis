@@ -1,4 +1,5 @@
 module PageAnalizis
+  # saves descendants of childrens attributes
   class DescendantStrategy < SignatureStrategy
     def scan(node, **, save_into signature)
       node.each_children do |child|
