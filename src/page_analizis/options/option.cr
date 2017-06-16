@@ -8,31 +8,27 @@ class PageAnalizis
             compare_trigger : Symbol
 
     def initialize(@key, value : Int32)
-      @size_trigger    = exarticulate trigger: "size"
-      @diff_trigger    = exarticulate trigger: "diff"
-      @compare_trigger = min_max_symbols[exarticulate triggers: %w(min max)]
+      @size_trigger    = exarticulate_trigger("size") && true
+      @diff_trigger    = exarticulate_trigger("diff") && true
+      @compare_trigger = exarticulate_compare_trigger
       @option_name     = exarticulate_the_rest
     end
 
-    private def exarticulate(*, trigger : String) : Bool
-      return false unless splited_key.includes?(trigger)
-      splited_key.delete(trigger)
-      true
+    private def exarticulate_trigger(trigger : String)
+      trigger if splited_key.includes? trigger
     end
 
-    private def exarticulate(*, triggers : Strings) : String
-      trigger = (splited_key & triggers).first
-
-      exarticulate(trigger: trigger)
-      trigger
+    private def exarticulate_trigger(*triggers)
+      (splited_key & triggers).first
     end
 
     private def splited_key
-      @splited_key ||= key.split(' ').as Strings?
+      @splited_key ||= key.split(' ')
     end
 
-    private def min_max_symbols
-      { "min" => :min, "max" => :max }
+    private def exarticulate_compare_trigger : String?
+      min_or_max = exarticulate_trigger("min", "max")
+      { "min" => :min, "max" => :max }[min_or_max]
     end
 
     private def exarticulate_the_rest
